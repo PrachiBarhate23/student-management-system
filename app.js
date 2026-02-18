@@ -1,10 +1,12 @@
-function login(user) {
-  if (user.role === "student") {
-    return "Welcome Student";
-  } else if (user.role === "admin") {
-    return "Welcome Admin";
+const login = (user) => {
+  switch (user.role) {
+    case "student":
+      return "Student Dashboard";
+    case "admin":
+      return "Admin Dashboard";
+    default:
+      return "Unauthorized";
   }
-  return "Access Denied";
-}
-module.exports = login;
+};
 
+module.exports = login;
