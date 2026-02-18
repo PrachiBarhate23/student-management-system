@@ -3,7 +3,7 @@ const login = (user) => {
     case "student":
       return "Student Dashboard";
     case "admin":
-      return "Admin Dashboard";
+      return "Administrator Dashboard";
     default:
       return "Unauthorized";
   }
